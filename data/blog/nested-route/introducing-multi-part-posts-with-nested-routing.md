@@ -28,3 +28,7 @@ Here are some reasons to use nested routes
 ## Note
 
 - The previous/next post links at bottom of the template are currently sorted by date. One could explore modifying the template to refer the reader to the previous/next post in the series, rather than by date.
+
+```ts
+console.log('123')
+```
