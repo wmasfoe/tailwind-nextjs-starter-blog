@@ -5,15 +5,15 @@ const siteMetadata = {
   description: '记录一些技术、生活的点滴。',
   language: 'zh-CN',
   theme: 'system', // system, dark or light
-  siteUrl: 'http:32bit.top', // TODO 上线修改
+  siteUrl: 'http://32bit.top', // TODO 上线修改
   siteRepo: 'https://github.com/wmasfoe/site',
   siteLogo: '/static/images/logo.png',
   image: '/static/images/avatar.png',
   socialBanner: '/static/images/twitter-card.png',
   email: 'lijq1103@gmail.com',
   github: 'https://github.com/wmasfoe',
-  twitter: 'https://twitter.com/Twitter',
-  // facebook: 'https://facebook.com',
+  twitter: 'https://twitter.com/JiaqiLi1103',
+  facebook: 'https://www.facebook.com/profile.php?id=100050238352500&mibextid=LQQJ4d',
   // youtube: 'https://youtube.com',
   // linkedin: 'https://www.linkedin.com',
   locale: 'zh-CN',
@@ -37,7 +37,7 @@ const siteMetadata = {
     // content security policy in the `next.config.js` file.
     // Select a provider and use the environment variables associated to it
     // https://vercel.com/docs/environment-variables
-    provider: 'giscus', // supported providers: giscus, utterances, disqus
+    // provider: 'giscus', // 开启评论功能 giscus utterances disqus
     giscusConfig: {
       // Visit the link below, and follow the steps in the 'configuration' section
       // https://giscus.app/
