@@ -15,7 +15,11 @@ import { ClientReload } from '@/components/ClientReload'
 const isDevelopment = process.env.NODE_ENV === 'development'
 const isSocket = process.env.SOCKET
 
+const defaultGetLayout = (page) => <LayoutWrapper>{page}</LayoutWrapper>
+
 export default function App({ Component, pageProps }) {
+  const getLayout = Component.getLayout || defaultGetLayout
+
   return (
     <ThemeProvider attribute="class" defaultTheme={siteMetadata.theme}>
       <Head>
@@ -23,9 +27,7 @@ export default function App({ Component, pageProps }) {
       </Head>
       {isDevelopment && isSocket && <ClientReload />}
       <Analytics />
-      <LayoutWrapper>
-        <Component {...pageProps} />
-      </LayoutWrapper>
+      {getLayout(<Component {...pageProps} />)}
     </ThemeProvider>
   )
 }
