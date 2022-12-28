@@ -1,12 +1,10 @@
 const Router = require('koa-router')
 
-const router = new Router({
-  prefix: '/api',
-})
+const router = new Router()
 
-router.get('/', async (ctx, _next) => {
+router.post('/register', async (ctx, _next) => {
   ctx.body = {
-    title: 'Hello Koa 2!',
+    title: 'register success!',
     msg: '这是根路由渲染的 msg 变量',
   }
 })
