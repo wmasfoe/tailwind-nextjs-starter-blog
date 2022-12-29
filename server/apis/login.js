@@ -1,17 +1,16 @@
 const Router = require('koa-router')
+const { verificationCode } = require('../common-api')
 
 const router = new Router()
 
-router.post('/register', async (ctx, _next) => {
-  ctx.body = {
-    title: 'register success!',
-    msg: '这是根路由渲染的 msg 变量',
-  }
-})
+router.post('/login', async (ctx, _next) => {
+  const { username, password } = ctx.request.body
+  console.log(ctx.request.body)
 
-router.get('/login', async (ctx, _next) => {
   ctx.body = {
     msg: 'login success!',
+    username,
+    password,
   }
 })
 
