@@ -4,8 +4,7 @@
   "private": true,
   "scripts": {
     "start": "cross-env SOCKET=true node ./scripts/next-remote-watch.js ./data",
-    "dev": "cross-env next dev",
-    "server:dev": "cross-env NODE_ENV=development nodemon server/index.js",
+    "dev": "cross-env NODE_ENV=development PORT=4455 nodemon server/index.js",
     "build": "cross-env next build && node ./scripts/generate-sitemap",
     "serve": "cross-env next start",
     "analyze": "cross-env ANALYZE=true next build",

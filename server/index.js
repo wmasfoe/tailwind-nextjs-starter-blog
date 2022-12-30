@@ -32,7 +32,7 @@ function main() {
     ctx.respond = false
   })
 
-  koaApp.listen(3000, () => {
+  koaApp.listen(port, () => {
     console.log(
       `> Server listening at http://localhost:${port} as ${
         dev ? 'development' : process.env.NODE_ENV
